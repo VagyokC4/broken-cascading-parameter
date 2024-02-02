@@ -27,3 +27,13 @@
 </div>
 
 <GettingStarted />
+
+@code {
+    [CascadingParameter] 
+    public CascadingAppState AppState { get; set; }
+
+    void UpdateMessageButtonClicked()
+    {
+        AppState.Message = $"Message Updated At {DateTime.Now.ToLongTimeString()}";
+    }
+}

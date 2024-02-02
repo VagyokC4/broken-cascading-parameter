@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 
-namespace MyApp;
+namespace MyApp.Components.Shared;
 
 public partial class CascadingAppState : ComponentBase, IAppState
 {
