@@ -1,5 +1,4 @@
 @page "/counter"
-@rendermode RenderMode.InteractiveServer
 
 <PageTitle>Counter</PageTitle>
 
@@ -13,8 +12,6 @@
     
     [CascadingParameter]
     public CascadingAppState AppState { get; set; }
-    
-    private int currentCount = 0;
 
     private void IncrementCount()
     {
